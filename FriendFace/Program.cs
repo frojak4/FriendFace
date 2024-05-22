@@ -27,18 +27,23 @@
                 Console.WriteLine("1. View Friends");
                 Console.WriteLine("2. Add Friends");
                 Console.WriteLine("3. Remove friends");
+                Console.WriteLine("e. Exit Program");
                 string userInput = Console.ReadLine();
 
-            if (userInput == "1")
-            {
-                viewFriends();
-            } else if (userInput == "2")
-            {
-                addFriends();
-            } else if (userInput == "3")
-            {
-                removeFriends();
-            }
+                if (userInput == "1")
+                {
+                    viewFriends();
+                } else if (userInput == "2")
+                {
+                    addFriends();
+                } else if (userInput == "3")
+                {
+                    removeFriends();
+                } else if (userInput.ToLower() == "e")
+                {
+                    System.Environment.Exit(0);
+
+                }
             }
         }
 
